@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section > div {
+	width: 520px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	padding: 50px;
+	background-color: lightgreen;
+	box-shadow: 1px 1px 5px grey;
+}
+
+.menu-icon {
+	color: #00897b;
+	cursor: pointer;
+}
+
+.menu-icon div {
+	height: 5px;
+	width: 35px;
+	margin: 5px auto;
+	background-color: black;
+	box-shadow: 1px 1px 2px white;
+	transition: all 300ms ease-in;
+}
+
+.cross div:nth-child(1) {
+	transform: translatey(10px) rotate(45deg);
+}
+
+.cross div:nth-child(3) {
+	transform: translatey(-10px) rotate(-45deg);
+}
+
+.cross div:nth-child(2) {
+	opacity: 0;
+}
