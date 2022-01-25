@@ -14,7 +14,8 @@ body {
 }
 
 .vertical,
-.horizontal {
+.horizontal,
+.hover {
 	margin: 20px 0;
 	border: 1px solid rgba(112, 128, 144, 0.4);
 }
@@ -54,4 +55,9 @@ body {
 	flex-direction: column;
 	background: none;
 	border: none;
+}
+
+.hover {
+	display: flex;
+	flex-direction: column-reverse;
 }
