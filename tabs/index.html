@@ -7,23 +7,37 @@
 		<title>Document</title>
 
 		<!-- Load style -->
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<section>
 			<div class="container">
-				<div class="tab-container">
-					<button class="tab">London</button>
-					<button class="tab">Paris</button>
-					<button class="tab">New York</button>
+				<div class="horizontal">
+					<div class="tab-container">
+						<button class="tab active">London</button>
+						<button class="tab">Paris</button>
+						<button class="tab">New York</button>
+					</div>
+					<div class="content">
+						<h2>London</h2>
+						<p>London is the capital city of England.</p>
+					</div>
 				</div>
-				<div class="content">
-					<h2>London</h2>
-					<p>London is the capital city of England.</p>
+
+				<div class="vertical">
+					<div class="tab-container">
+						<button class="tab active">London</button>
+						<button class="tab">Paris</button>
+						<button class="tab">New York</button>
+					</div>
+					<div class="content">
+						<h2>London</h2>
+						<p>London is the capital city of England.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<script src="index.js"></script>
+		<script type="module" src="./index.js"></script>
 	</body>
 </html>

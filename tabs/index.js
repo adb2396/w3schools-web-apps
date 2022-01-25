@@ -1,36 +1,67 @@
-
 // Get all tab nodes
-const tabList = document.querySelectorAll('.tab');
+const horizontalTabs = document.querySelectorAll('.horizontal .tab');
+const verticalTabs = document.querySelectorAll('.vertical .tab');
 // Get content node to fill tab information
-const content = document.querySelector('.content');
+const h_content = document.querySelector('.horizontal .content');
+const v_content = document.querySelector('.vertical .content');
 
-function renderContent(country, info) {
-    content.textContent = '';
+function renderContent(country, info, type) {
+    let title, text;
 
-    let header = document.createElement('h2');
-    header.textContent = country;
-    let infoPara = document.createElement('p');
-    infoPara.textContent = info;
+    if (type === 'hTab') {
+        title = h_content.firstElementChild;
+        text = h_content.lastElementChild;  
+    } else {
+        title = v_content.firstElementChild;
+        text = v_content.lastElementChild;  
+    }
+    
+    title.textContent = country;
+    text.textContent = info;
+}
 
-    content.appendChild(header);
-    content.appendChild(infoPara);
+function updateActive(type) {
+    let currActive;
+    if (type === 'hTab') {
+        currActive = document.querySelector('.horizontal .active');
+    } else {
+        currActive = document.querySelector('.vertical .active');
+    }
+    currActive.classList.remove('active');
+}
+
+function onTabEvent(event, type) {
+    // remove current 'active' tab class
+    updateActive(type);
+
+    switch (event.currentTarget.textContent) {
+        case 'London':
+            event.currentTarget.classList.add('active');
+            renderContent('London', 'London is the capital city of England.', type);
+            return;
+        case 'Paris':
+            event.currentTarget.classList.add('active');
+            renderContent('Paris', 'Paris is the capital of France.', type);
+            return;
+        case 'New York':
+            event.currentTarget.classList.add('active');
+            renderContent('New York', 'New York is the capital of USA.', type);
+            return;
+        default:
+            return;
+    }
 }
 
 // Add 'click' event to each tabList nodes
-tabList.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-        switch (tab.textContent) {
-            case 'London':
-                renderContent('London', 'London is the capital city of England.');
-                return;
-            case 'Paris':
-                renderContent('Paris', 'Paris is the capital of France.');
-                return;
-            case 'New York':
-                renderContent('New York', 'New York is the capital of USA.');
-                return;
-            default:
-                return;
-        }
-    })
+horizontalTabs.forEach(function (tab) {
+    tab.addEventListener('click', function (e) {
+        onTabEvent(e, 'hTab');
+    });
+});
+
+// Add 'click' event to each tabList nodes
+verticalTabs.forEach(function (tab) {
+    tab.addEventListener('click', function (e) {
+        onTabEvent(e, 'vTab');
+    });
 });

@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.vertical,
+.horizontal {
+	margin: 20px 0;
+	border: 1px solid rgba(112, 128, 144, 0.4);
+}
+
+.tab-container {
+	background: rgb(239, 239, 239);
+	border-bottom: 1px solid rgba(112, 128, 144, 0.4);
+}
+
+.tab {
+	padding: 20px;
+	margin-right: -5px;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.tab:hover {
+	background-color: #d8d8d8;
+}
+
+.active {
+	background-color: rgba(128, 128, 128, 0.4);
+}
+
+.content {
+	padding: 20px;
+}
+
+.vertical {
+	display: flex;
+}
+
+.vertical .tab-container {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	background: none;
+	border: none;
+}
