@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	color: rgb(31, 31, 31);
+}
+
+.app {
+	margin: 0 auto;
+	display: flex;
+}
+
+/* Menu classes */
+
+.menu {
+	width: 360px;
+	padding: 20px 0px;
+	color: whitesmoke;
+	background-color: #037b7b;
+}
+
+.menu h2 {
+	padding: 0 20px;
+	font-size: 26px;
+}
+
+.menu input {
+	width: 100%;
+	font-size: 15px;
+	padding: 15px;
+	box-shadow: none;
+	border: none;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.menu li {
+	padding: 15px 20px;
+	text-align: left;
+}
+
+.menu li:hover {
+	cursor: pointer;
+	color: rgb(31, 31, 31);
+	background-color: whitesmoke;
+}
+
+/* Page classes */
+
+.page {
+	width: 720px;
+	padding: 30px 20px;
+	background-color: #cbeefa;
+}
