@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightgray;
+	overflow-x: hidden;
+}
+
+.content button {
+	position: relative;
+	left: -70px;
+	width: 110px;
+	text-align: left;
+	color: white;
+	margin: 5px 0;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	transition: 0.3s ease-out;
+	cursor: pointer;
+}
+
+.content button:hover {
+	left: 0px;
+}
+
+.green-btn {
+	background-color: green;
+}
+
+.blue-btn {
+	background-color: steelblue;
+}
+
+.red-btn {
+	background-color: crimson;
+}
+
+.black-btn {
+	background-color: rgb(37, 37, 37);
+}
