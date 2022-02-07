@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	height: 100vh;
+}
+
+nav {
+	width: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	height: 100%;
+	padding: 60px 0;
+	overflow-x: hidden;
+	z-index: 1;
+}
+
+nav a {
+	padding: 20px 20px 20px 40px;
+	display: block;
+	font-size: 22px;
+	cursor: pointer;
+	color: lightgray;
+}
+
+nav a:hover {
+	color: white;
+}
+
+.actions button {
+	border: none;
+	padding: 10px;
+	background-color: lightseagreen;
+	color: #313131;
+	cursor: pointer;
+}
+
+.actions button:hover {
+	background-color: rgb(26, 165, 158);
+}
+
+.opacity {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.animation {
+	transition: 0.5s ease-in;
+}
+
+.overlay {
+	width: 250px;
+}
+
+.full-width-overlay {
+	text-align: center;
+	width: 100%;
+}
+
+.push-canvas {
+	margin-left: 250px;
+}
+
+.close {
+	width: 0px;
+}
+
+.close-btn {
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.content {
+	position: absolute;
+	/* left: 400px; */
+	padding-left: 20px;
+	width: 800px;
+	font-size: 18px;
+}
+
+.content p {
+	line-height: 25px;
+	color: rgb(60, 60, 60);
+}
