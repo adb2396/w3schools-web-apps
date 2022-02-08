@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+nav {
+	white-space: nowrap;
+	background-color: rgb(40, 40, 40);
+}
+
+nav a {
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: rgb(80, 80, 80);
+}
+
+#horizontal {
+	width: 480px;
+	overflow-x: scroll;
+}
+
+#vertical {
+	width: 480px;
+	height: 250px;
+	overflow-y: scroll;
+}
+
+#vertical a {
+	display: block;
+}
