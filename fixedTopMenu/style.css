@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 900px;
+  background-color: #222;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+nav a:hover {
+  background-color: whitesmoke;
+  color: #222;
+}
+
+.content {
+  margin-top: 60px;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 250px;
+}
+
+.content p {
+  margin: 10px 0;
+}
