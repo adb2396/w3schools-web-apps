@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="carousel">
+        <div class="images">
+          <div class="active">
+            <p>1/3</p>
+            <img src="./images/green-valley.jpeg" alt="Green valley" />
+          </div>
+          <div>
+            <p>2/3</p>
+            <img src="./images/show-mountains.jpeg" alt="White snow mountain" />
+          </div>
+          <div>
+            <p>3/3</p>
+            <img src="./images/sunset.jpeg" alt="Sunset" />
+          </div>
+
+          <button class="left">&#60;</button>
+          <button class="right">&#62;</button>
+        </div>
+        <div class="actions">
+          <button class="active" data-action-btn="0"></button>
+          <button data-action-btn="1"></button>
+          <button data-action-btn="2"></button>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

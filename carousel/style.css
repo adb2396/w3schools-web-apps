@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.images p {
+  position: absolute;
+  padding: 0 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.images div:not(.active) {
+  display: none;
+}
+
+/* Fading animation */
+.images div {
+  animation: fade 0.6s;
+}
+
+img {
+  width: 100%;
+}
+
+/* Left, Right action buttons */
+.left,
+.right {
+  cursor: pointer;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  font-size: 24px;
+  border: none;
+  background-color: rgba(40, 40, 40, 0);
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.left:hover,
+.right:hover {
+  background-color: rgba(40, 40, 40, 1);
+}
+
+.right {
+  right: 0;
+}
+
+/* Bottom action buttons */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.actions button.active {
+  background-color: lightgray;
+}
+
+.actions button:hover {
+  background-color: lightgray;
+}
+
+/* Keyframes */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
