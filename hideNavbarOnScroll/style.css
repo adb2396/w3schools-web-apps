@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 280px;
+  overflow-y: scroll;
+}
+
+nav {
+  position: fixed;
+  width: 1185px;
+  background-color: #282828;
+  transition: all 0.5s ease-out;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: lightgray;
+  color: #282828;
+}
+
+.content {
+  padding: 60px 20px 1200px;
+  font-size: 18px;
+}
