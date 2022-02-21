@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 280px;
+  overflow-y: scroll;
+}
+
+/* Nav classes */
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 140px;
+  width: 1185px;
+  background-color: lightgray;
+  transition: all 0.4s ease-out;
+}
+
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:first-child {
+  float: left;
+  margin-right: auto;
+}
+
+nav a:not(:first-child):hover {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Content classes */
+.content {
+  padding: 140px 10px 1200px;
+}
